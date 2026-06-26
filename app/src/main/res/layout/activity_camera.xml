@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <!-- Camera live preview -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Segmentation result overlay — transparent ImageView on top -->
+    <ImageView
+        android:id="@+id/iv_result_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:contentDescription="Segmentation overlay"/>
+
+    <!-- HUD overlay (bottom strip) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#AA000000"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_fps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-- FPS"
+            android:textColor="@color/accent_green"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:id="@+id/tv_detections"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/btn_save_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="Kaydet"
+            android:textColor="@color/bg_dark"
+            android:textSize="12sp"
+            android:backgroundTint="@color/accent_green"
+            android:stateListAnimator="@null"/>
+    </LinearLayout>
+
+</FrameLayout>

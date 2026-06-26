@@ -1,0 +1,26 @@
+# Android
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# NDK / CMake build output
+app/.cxx/
+app/build/
+
+# Large binary libs (download via download_ncnn_libs.py)
+app/libs/ncnn/
+app/libs/opencv/
+
+# Model files (place manually in assets/)
+app/src/main/assets/*.param
+app/src/main/assets/*.bin
+
+# Kotlin
+*.kotlin_module
