@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background palette -->
+    <color name="bg_dark">#0F1117</color>
+    <color name="bg_card">#1A1D27</color>
+    <color name="bg_surface">#21253A</color>
+
+    <!-- Accent -->
+    <color name="accent_green">#39FF6E</color>
+    <color name="accent_teal">#00D2C8</color>
+
+    <!-- Text -->
+    <color name="text_primary">#E8EAF6</color>
+    <color name="text_secondary">#7B8099</color>
+
+    <!-- Track -->
+    <color name="track_tint">#2D3048</color>
+
+    <!-- System -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
